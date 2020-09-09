@@ -49,3 +49,11 @@ header{
 table{
   margin: 50px 0;
 }
+.card.grafico{
+  width: 50%;
+}
+.container-grafico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
