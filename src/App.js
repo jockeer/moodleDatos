@@ -20,10 +20,10 @@ function App() {
             <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">modulos por curso</a>
           </li>
           <li className="nav-item" role="presentation">
-            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">tipos de modulos </a>
+            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Grupos Creados </a>
           </li>
           <li className="nav-item" role="presentation">
-            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contactA" role="tab" aria-controls="contact" aria-selected="false">tipos de modulos </a>
+            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contactA" role="tab" aria-controls="contact" aria-selected="false">Grupos por alumno </a>
           </li>
         </ul>
         <div className="tab-content" id="myTabContent">

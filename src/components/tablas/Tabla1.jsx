@@ -1,4 +1,6 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,Fragment} from 'react'
+
+import ReactHTMLTableToExcle from 'react-html-table-to-excel'
 
 const Tabla1 = () => {
     
@@ -14,26 +16,31 @@ const Tabla1 = () => {
     }, [])
     
     return ( 
-        <table className="table">
-            <thead className="thead-dark">
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Nombre de la Materia</th>
-                    <th scope="col">Nombre Corto</th>
-                </tr>
-                        
-            </thead>
-            <tbody>
-                {datos.map(dato => {
-                    return  <tr key={dato.id}>               
-                                <td>{dato.id}</td>
-                                <td>{dato.fullname}</td>
-                                <td>{dato.shortname}</td>
-                            </tr>
-                })}
-                
-            </tbody>
-        </table>
+        <Fragment>
+
+            <ReactHTMLTableToExcle id="botonExportarExcel" className="btn btn-success" table="tabla1" filename="tabla1" sheet="pagina 1" buttonText="Exportar a excel"/>
+            <table className="table" id="tabla1">
+                <thead className="thead-dark">
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nombre de la Materia</th>
+                        <th scope="col">Nombre Corto</th>
+                    </tr>
+                            
+                </thead>
+                <tbody>
+                    {datos.map(dato => {
+                        return  <tr key={dato.id}>               
+                                    <td>{dato.id}</td>
+                                    <td>{dato.fullname}</td>
+                                    <td>{dato.shortname}</td>
+                                </tr>
+                    })}
+                    
+                </tbody>
+            </table>
+
+        </Fragment>
 
             
      );
