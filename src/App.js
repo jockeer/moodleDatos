@@ -5,6 +5,7 @@ import Tabla1 from './components/tablas/Tabla1'
 import Tabla2 from './components/tablas/Tabla2'
 import Tabla3 from './components/tablas/Tabla3'
 import Tabla4 from './components/tablas/Tabla4'
+import Tabla5 from './components/tablas/Tabla5'
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           <li className="nav-item" role="presentation">
             <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contactA" role="tab" aria-controls="contact" aria-selected="false">Grupos por alumno </a>
           </li>
+          <li className="nav-item" role="presentation">
+            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contactB" role="tab" aria-controls="contact" aria-selected="false">Materias por Categoria </a>
+          </li>
         </ul>
         <div className="tab-content" id="myTabContent">
           <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -38,6 +42,10 @@ function App() {
           </div>
           <div className="tab-pane fade" id="contactA" role="tabpanel" aria-labelledby="contact-tab">
           <Tabla4/>
+
+          </div>
+          <div className="tab-pane fade" id="contactB" role="tabpanel" aria-labelledby="contact-tab">
+          <Tabla5 />
 
           </div>
         </div>
