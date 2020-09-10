@@ -50,10 +50,21 @@ table{
   margin: 50px 0;
 }
 .card.grafico{
-  width: 50%;
+  width: 90%;
+}
+.container-graficos{
+/* width: 100vw; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 20px;
 }
 .container-grafico{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card-header{
+  background: var(--gris2);
+  color: white;
+  text-align: center;
 }
